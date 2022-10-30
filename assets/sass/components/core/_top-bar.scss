@@ -1,0 +1,64 @@
+.top-bar{
+	top: 0;
+	width: 100%;
+	position: fixed;
+	z-index: 99999999;
+	@include box-shadow;
+	height: $header_size;
+	box-sizing: border-box;
+	background: $firstColor;
+	border-bottom: $border_size solid $borderColor;
+
+	.tab{
+		width: 9em;
+		float: left;
+		cursor: pointer;
+		text-align: center;
+		font-size: $smallFont;
+		line-height: $header_size + $padding5;
+		@include hover($blueColor);
+	}
+
+	.user{
+		float: left;
+		cursor: pointer;
+		text-align: center;
+		width: $header_size;
+		height: $header_size;
+		line-height: $header_size;
+		border-top-left-radius: $padding2;
+	
+		img{
+			width: 70%;
+			margin-top: 1vh;
+			text-align: center;
+			border-radius: 50%;
+		}
+
+		@include hover($blueColor);
+	}
+
+	.label{
+		float: left;
+		font-size: $smallFont;
+		padding-left: $padding_base;
+		padding-right: $padding_base;
+		line-height: $header_size + $padding5;
+	}
+
+	@include icons{
+		float: left;
+		cursor: pointer;
+		width: $icon_size;
+		text-align: center;
+		font-size: $smallFont;
+		border-top-left-radius: $padding3;
+		line-height: $header_size + $padding5;
+		border-left: $border_size solid $borderColor;
+		@include hover($blueColor);
+	}
+
+	nav{ float: right; }
+	input{ opacity: 0; }
+	.actived{ background: $blueColor; }
+}

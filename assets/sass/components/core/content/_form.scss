@@ -1,0 +1,67 @@
+input{
+	width: 95%;
+	border: none;
+	outline: none;
+	color: inherit;
+	line-height: 3em;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	background: inherit;
+	font-size: $smallFont - .05;
+	border-top: $border_size solid $borderColor;
+	border-bottom: $border_size solid $borderColor;
+
+	@include hover;
+	@include placeholder;
+}
+
+select{
+	width: 100%;
+	height: 3em;
+	border: none;
+	outline: none;
+	color: inherit;
+	cursor: pointer;
+	line-height: 3em;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	background: inherit;
+	font-size: $smallFont - .05;
+	border-top: $border_size solid $borderColor;
+	border-bottom: $border_size solid $borderColor;
+
+	@include hover;
+	@include placeholder;
+}
+
+button{
+	width: 100%;
+	height: 3em;
+	border: none;
+	outline: none;
+	color: inherit;
+	cursor: pointer;
+	line-height: 3em;
+	text-align: center;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	background: inherit;
+	font-size: $smallFont - .05;
+	border-bottom: $border_size solid $borderColor;
+	@include hover;
+}
+
+.label{
+	display: block;
+	line-height: 3em;
+	font-size: $smallFont;
+	padding-left: $padding_base;
+}
+
+.message{
+	display: none;
+	line-height: 3em;
+	font-size: $smallFont;
+	padding-left: $padding_base;
+	border-bottom: $border_size solid $borderColor;
+}

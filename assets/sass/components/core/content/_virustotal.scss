@@ -1,0 +1,48 @@
+.header{
+	text-align: right;
+	height: $header_size;
+	font-size: $smallFont;
+	line-height: $header_size;
+	padding-left: $padding_base;
+	padding-right: $padding_base;
+	border-bottom: $border_size solid $borderColor;
+
+	.right{
+		float: right;
+
+		.total, .detected{
+			float: left;
+			width: 7.8em;
+			text-align: center;
+			border-left: $border_size solid $borderColor;
+		}
+
+		.detected{ background: $redColor; }
+	}
+
+	.link{ float: left; }
+}
+
+.list{
+	overflow: auto;
+	max-height: 27.65em;
+
+	.item{
+		height: $header_size;
+		font-size: $smallFont;
+		line-height: $header_size;
+		padding-left: $padding_base;
+		padding-right: $padding_base;
+
+		.name{ float: left; }
+		.result{ float: right; }
+
+		.red{ color: $redColor; }
+		.green{ color: $greenColor; }
+		.orange{ color: $orangeColor; }
+
+		&:not(:last-child) { border-bottom: $border_size solid $borderColor; }
+	}
+
+	@include scrollbar;
+}
