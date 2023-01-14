@@ -9,4 +9,5 @@ window.onload = e => {
 			'.hash-input', El.value('select')
 		)
 	})
+	
 }

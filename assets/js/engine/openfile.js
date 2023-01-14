@@ -22,8 +22,8 @@ const OpenFile = {
 				}))
 
 				Hashes.all_basic_hashes(file)
-				El.text('#filename', Str.cut(file.name, 30))
-				Attr.set('#filename', 'title', `${ file.name } (${ Format.bytes(file.size) })`)
+				Attr.set('#filename', 'title', `${ file.path }`)
+				El.text('#filename', `${ Str.cut(file.name, 50) } (${ Format.bytes(file.size) })`)
 			})
 		})
 	},

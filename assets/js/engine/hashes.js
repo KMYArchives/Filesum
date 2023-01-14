@@ -1,17 +1,5 @@
 const Hashes = {
 
-	compare () {
-		if (El.value('.hash-input') != "" && El.value('.compare-input') != "") {
-			El.show('.message')
-
-			if (El.value('.hash-input') == El.value('.compare-input')) {
-				El.text('.message', 'The hashes are matched')
-			} else {
-				El.text('.message', 'The hashes are not matched')
-			}
-		}
-	},
-
 	core (path, algo) {
 		return new Promise(function (resolve, reject) {
 			const hash = crypt.createHash(algo)
